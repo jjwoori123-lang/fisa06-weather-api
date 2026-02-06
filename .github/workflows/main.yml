@@ -38,7 +38,7 @@ jobs:
       - name: Run update_weather.py
         env:
           # GitHub Secrets에 넣은 이름과 똑같이 맞춰야 함
-          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+          OPENWEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: python update_weather.py
 
       - name: Commit and Push changes
